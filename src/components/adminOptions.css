@@ -1,0 +1,125 @@
+.settings-container {
+  width: 50%;
+  margin: 0;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  color: white;
+  position: relative;
+}
+
+.settings-container::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  z-index: -1;
+  background: linear-gradient(45deg, #f20ea3, #f20ea3, #00fff0);
+  border-radius: 15px;
+}
+
+.settings-container::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+  background-color: #1e1e2f;
+  border-radius: 12px;
+  z-index: -2;
+}
+
+h3 {
+  color: #f0f0f0;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.styled-table {
+  width: 100%;
+  max-width: 800px;
+  border-collapse: collapse;
+  font-family: "Arial", sans-serif;
+  margin: 20px auto;
+}
+
+.styled-table thead tr {
+  background-color: #353548;
+  color: white;
+  text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 12px 15px;
+  text-align: center;
+  border: 1px solid #dddddd;
+}
+
+.styled-table tbody tr {
+  background-color: #2b2b3c;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #3d3d4f;
+}
+
+.styled-table tbody tr:hover {
+  background-color: #474761;
+  color: #ffffff;
+}
+
+.edit-button-settings {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.5s, color 0.5s, box-shadow 0.5s;
+}
+
+.edit-button-settings:hover {
+  background: cyan;
+  box-shadow: 0 0 10px cyan, 0 0 40px cyan, 0 0 80px cyan;
+}
+
+.logout-button-container {
+  display: flex; /* Use Flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  margin-top: 20px; /* Add some spacing from the previous content */
+}
+.logout-button-settings {
+  background-color: #cc4641;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background 0.5s, color 0.5s, box-shadow 0.5s;
+}
+.logout-button-settings:hover {
+  background: #f20ea3;
+  box-shadow: 0 0 10px #f20ea3, 0 0 40px #f20ea3, 0 0 80px #f20ea3;
+}
+
+.styled-table td {
+  vertical-align: middle;
+}
+
+.userSettings-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  width: 100%;
+}

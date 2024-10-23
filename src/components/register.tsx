@@ -95,7 +95,7 @@ function Register() {
       return;
     }
 
-    navigate("/Account");
+    navigate("/login");
   };
 
   return (

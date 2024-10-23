@@ -1,11 +1,10 @@
 import React from "react";
-import { useNavigate } from "react-router-dom"; // Import useNavigate
-import "./userSettings.css";
+import { useNavigate } from "react-router-dom";
+import "./adminOptions.css";
 import Navbar from "./navbar";
-import Button from "./button";
 
-const UserSettings = () => {
-  const navigate = useNavigate(); // Initialize navigate
+const AdminOptions = () => {
+  const navigate = useNavigate();
 
   const handleLogout = () => {
     navigate("/login");
@@ -21,9 +20,12 @@ const UserSettings = () => {
 
   return (
     <div>
-      <Navbar label="Back" link="/account" />
+      <Navbar label="Back" link="/adminpage" />
       <div className="userSettings-center">
         <div className="settings-container">
+          <center>
+            <h1>Admin Access</h1>
+          </center>
           <h3>User Information</h3>
           <table className="styled-table">
             <thead>
@@ -50,8 +52,11 @@ const UserSettings = () => {
             </tbody>
           </table>
 
+          {/* since this is an admin access, if they click "Log out" only the user account will be logged out. But not the admin. */}
           <div className="logout-button-container">
-            <button className="logout-button-settings" onClick={handleLogout}>
+            <button
+              className="logout-button-settings" /*onClick={handleLogout}*/
+            >
               LOG OUT
             </button>
           </div>
@@ -61,4 +66,4 @@ const UserSettings = () => {
   );
 };
 
-export default UserSettings;
+export default AdminOptions;

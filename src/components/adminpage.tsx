@@ -1,8 +1,16 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./adminPage.css";
 import Navbar from "./navbar";
 
 const AdminPage = () => {
+  const navigate = useNavigate();
+
+  const handleOptionsClick = (userId: number) => {
+    // Declare userId type
+    navigate("/adminOptions", { state: { userId } });
+  };
+
   const data = [
     { id: 1, info: "Username1" },
     { id: 2, info: "Username2" },
@@ -29,7 +37,12 @@ const AdminPage = () => {
                 <tr key={user.id}>
                   <td>{user.info}</td>
                   <td>
-                    <button className="edit-button-admin">Options</button>
+                    <button
+                      className="edit-button-admin"
+                      onClick={() => handleOptionsClick(user.id)}
+                    >
+                      Options
+                    </button>
                     <button className="delete-button-admin">Delete</button>
                   </td>
                 </tr>

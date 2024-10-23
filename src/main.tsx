@@ -11,6 +11,7 @@ import LogIn from "./components/login";
 import Account from "./components/account";
 import UserSettings from "./components/userSettings";
 import AdminPage from "./components/adminpage";
+import AdminOptions from "./components/adminOptions";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -44,6 +45,7 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
         <Route path="/account" element={<Account />} />
         <Route path="/userSettings" element={<UserSettings />} />
         <Route path="/adminpage" element={<AdminPage />} />
+        <Route path="/adminOptions" element={<AdminOptions />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

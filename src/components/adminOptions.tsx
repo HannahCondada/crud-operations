@@ -51,15 +51,6 @@ const AdminOptions = () => {
               ))}
             </tbody>
           </table>
-
-          {/* since this is an admin access, if they click "Log out" only the user account will be logged out. But not the admin. */}
-          <div className="logout-button-container">
-            <button
-              className="logout-button-settings" /*onClick={handleLogout}*/
-            >
-              LOG OUT
-            </button>
-          </div>
         </div>
       </div>
     </div>

@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.logo {
+  height: 30px;
+  width: 30px;
+  margin-left: 30px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: rgb(22, 14, 52);
+  padding: 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.logo-container {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+}
+
+.navbar-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  margin-right: 20px;
+}
